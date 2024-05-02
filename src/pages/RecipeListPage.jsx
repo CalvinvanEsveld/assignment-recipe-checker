@@ -41,7 +41,7 @@ export const RecipeListPage = ({ clickFn }) => {
         </Center>
         <Center>
           <SimpleGrid
-            m={{ base: 0, lg: 10 }}
+            m={{ base: 0, lg: 5 }}
             columns={{ sm: 1, md: 2, xl: 4 }}
             gap={{ base: 3, md: 12 }}
           >
