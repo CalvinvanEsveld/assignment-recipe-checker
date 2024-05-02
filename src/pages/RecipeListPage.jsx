@@ -26,6 +26,7 @@ export const RecipeListPage = ({ clickFn }) => {
           align={"center"}
           fontWeight={"bold"}
           fontSize={"6xl"}
+          lineHeight={{base: "70px", lg: "100px"}}
         >
           Recipe Checker
         </Text>

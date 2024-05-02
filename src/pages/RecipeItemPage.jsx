@@ -1,6 +1,5 @@
 import { ArrowLeftIcon } from "@chakra-ui/icons";
 import {
-  Card,
   Image,
   Text,
   Center,
@@ -14,11 +13,9 @@ import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
 } from "@chakra-ui/react";
 
@@ -50,22 +47,28 @@ export const RecipeItemPage = ({ item, clickFn }) => {
           borderRadius={5}
           width={{ base: "100%", lg: "40%" }}
           bg={"orange.50"}
+          mt={{base: 0, lg: 4}}
+          mb={{base: 0, lg: 4}}
         >
           <IconButton
             icon={<ArrowLeftIcon />}
+            borderTopLeftRadius={{base: 0, lg: 5}}
+            borderRadius={0}
             size={"sm"}
+            position="absolute"
             width={"50px"}
             colorScheme="orange"
             onClick={() => clickFn()}
           ></IconButton>
-          <Text fontSize={"5xl"} align={"center"}>
+          {/* <Text fontSize={"5xl"} align={"center"} lineHeight={10}>
             {item.label}
-          </Text>
+          </Text> */}
           <Image
             src={item.image}
             width={"100%"}
             height={"300px"}
             objectFit={"cover"}
+            borderTopRadius={5}
           />
           <SimpleGrid ml={8} mr={8} mt={2} mb={4} columns={{ base: 1, lg: 2 }}>
             <Box>
